@@ -1,59 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RPS - THE GAME</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terraform Associate 004 — 4 week course</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
   </head>
   <body>
-  <section class="section hero">
-    <div id="head" class="container hero-body has-text-centered">
-      <h1 class="title">
-        ROCK-PAPER-SCISSORS
-      </h1>
-      <p class="subtitle">
-        <strong>THE GAME</strong>!
-      </p>
-    </div>
-    <div id="game-content" class="container">
-      <header class="card-header">
-        <p class="card-header-title is-centered">
-        <span class="tag is-light is-large">Player:</span><span id="playerScore" class="tag is-primary is-light is-large">0</span>
-        <span class="tag is-light is-large">Computer:</span><span id="computerScore" class="tag is-primary is-light is-large">0</span>
-        <span id="winner" class="tag is-info is-light is-large">Current winner</span>
-        <button id="RESET" class="button is-danger">RESET</button>
-        </p>
-      </header>
-        <header class="card-header">
-            <p class="card-header-title is-centered">Player chose: <span id="playerSpan"></span></p>
-            <p class="card-header-title is-centered"><span id="rpsOver" class="tag is-info is-light is-large">GAME IN PROGRESS</span></p>
-            <p class="card-header-title is-centered">Computer chose: <span id="computerSpan"></span></p>
-        </header>
-        <div id="button-div content" class="buttons is-centered">
-        <footer class="card-footer">
-          <button id="rock-button" class="button is-primary rps">Rock</button>
-          <button id="paper-button" class="button is-primary rps">Paper</button>
-          <button id="scissors-button" class="button is-primary rps">Scissors</button>
-                <div class="select is-rounded is-info">
-                    <select name="" id="playto">
-                      <option value="3">Playing To..</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                  </select>
-                </div>
+    <section class="hero is-dark">
+      <div class="hero-body">
+        <p class="title">Terraform Associate 004</p>
+        <p class="subtitle">4 week course · Terraform 1.12 · ~8–10 hrs/week</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="content">
+          <p>
+            Open these files in the repo (GitHub renders Markdown). Labs use
+            <code>random</code> and <code>local</code> providers.
+          </p>
+          <ul>
+            <li><a href="README.md">Course home</a></li>
+            <li><a href="CHECKLIST.md">32-objective checklist</a></li>
+            <li><a href="FLASHCARDS.md">Flashcards</a></li>
+            <li><a href="OFFICIAL.md">Official HashiCorp tutorials</a></li>
+          </ul>
+        </div>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <div class="box">
+              <h2 class="title is-4">Week 1 · Workflow</h2>
+              <p>Domains 1–3. Commands, providers, state purpose.</p>
+              <p>
+                <a href="week-01-workflow/README.md">Start</a> ·
+                <a href="week-01-workflow/notes.md">Notes</a> ·
+                <a href="week-01-workflow/quiz.md">Quiz</a>
+              </p>
             </div>
           </div>
-        </footer>
+          <div class="column is-half">
+            <div class="box">
+              <h2 class="title is-4">Week 2 · Configuration</h2>
+              <p>Domain 4. Conditions, lifecycle, ephemeral, write-only.</p>
+              <p>
+                <a href="week-02-configuration/README.md">Start</a> ·
+                <a href="week-02-configuration/notes.md">Notes</a> ·
+                <a href="week-02-configuration/quiz.md">Quiz</a>
+              </p>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="box">
+              <h2 class="title is-4">Week 3 · Modules + state</h2>
+              <p>Domains 5–7. Modules, backends, import, logging.</p>
+              <p>
+                <a href="week-03-modules-state/README.md">Start</a> ·
+                <a href="week-03-modules-state/notes.md">Notes</a> ·
+                <a href="week-03-modules-state/quiz.md">Quiz</a>
+              </p>
+            </div>
+          </div>
+          <div class="column is-half">
+            <div class="box">
+              <h2 class="title is-4">Week 4 · HCP + mocks</h2>
+              <p>Domain 8. Three timed mocks. Exam-day sheet.</p>
+              <p>
+                <a href="week-04-hcp-exam/README.md">Start</a> ·
+                <a href="week-04-hcp-exam/notes.md">Notes</a> ·
+                <a href="week-04-hcp-exam/official-samples.md">Official samples</a> ·
+                <a href="week-04-hcp-exam/mock-01.md">Mock 1</a> ·
+                <a href="week-04-hcp-exam/mock-02.md">Mock 2</a> ·
+                <a href="week-04-hcp-exam/mock-03.md">Mock 3</a>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-  </section>
+    </section>
   </body>
-  <script src="app.js"></script>
 </html>

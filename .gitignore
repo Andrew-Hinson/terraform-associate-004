@@ -1,0 +1,12 @@
+node_modules/
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+*.log
+generated/
+*.txt
+!README.md
+!**/README.md
